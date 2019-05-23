@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Setting up your own Ghost theme</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:400,300italic,300,400italic,700,700italic|Playfair+Display:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://wowthemesnet.github.io/ghost-demo-nectaria/themes-2-2/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="https://wowthemesnet.github.io/ghost-demo-nectaria/themes-2-2/amp/">
+    
+    <meta property="og:site_name" content="Ghost Theme">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Setting up your own Ghost theme">
+    <meta property="og:description" content="Creating a totally custom design for your publication
+
+Ghost comes with a beautiful default theme called Casper, which is designed to
+be a clean, readable publication layout and can be easily adapted for most
+purposes. However, Ghost can also be completely themed to suit your needs.
+Rather than just giving you a few basic settings which act as a poor proxy for
+code, we just let you write code.
+
+There are a huge range of both free and premium pre-built themes which you can
+get from the Ghost Them">
+    <meta property="og:url" content="https://wowthemesnet.github.io/ghost-demo-nectaria/themes-2-2/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1491379225938-4e00902b93bb?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=253c59d989b9ed1ce0d2ae9ada1e61ba">
+    <meta property="article:published_time" content="2017-09-27T11:18:51.000Z">
+    <meta property="article:modified_time" content="2017-09-27T15:30:08.000Z">
+    <meta property="article:tag" content="Getting Started">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/wowthemesnet">
+    <meta property="article:author" content="https://www.facebook.com/WowThemesNet">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Setting up your own Ghost theme">
+    <meta name="twitter:description" content="Creating a totally custom design for your publication
+
+Ghost comes with a beautiful default theme called Casper, which is designed to
+be a clean, readable publication layout and can be easily adapted for most
+purposes. However, Ghost can also be completely themed to suit your needs.
+Rather than just giving you a few basic settings which act as a poor proxy for
+code, we just let you write code.
+
+There are a huge range of both free and premium pre-built themes which you can
+get from the Ghost Them">
+    <meta name="twitter:url" content="https://wowthemesnet.github.io/ghost-demo-nectaria/themes-2-2/">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1491379225938-4e00902b93bb?ixlib&#x3D;rb-0.3.5&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;s&#x3D;253c59d989b9ed1ce0d2ae9ada1e61ba">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="John">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Getting Started">
+    <meta name="twitter:site" content="@wowthemesnet">
+    <meta name="twitter:creator" content="@WowThemesNet">
+    <meta property="og:image:width" content="1080">
+    <meta property="og:image:height" content="810">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Ghost Theme",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://wowthemesnet.github.io/ghost-demo-nectaria/content/images/2019/05/logo.png",
+            "width": 107,
+            "height": 33
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "John",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//www.gravatar.com/avatar/b1cc14991db7a456fcd761680bbc8f81?d=404&s=250",
+            "width": 250,
+            "height": 250
+        },
+        "url": "https://wowthemesnet.github.io/ghost-demo-nectaria/author/john/",
+        "sameAs": [
+            "https://www.wowthemes.net",
+            "https://www.facebook.com/WowThemesNet",
+            "https://twitter.com/WowThemesNet"
+        ]
+    },
+    "headline": "Setting up your own Ghost theme",
+    "url": "https://wowthemesnet.github.io/ghost-demo-nectaria/themes-2-2/",
+    "datePublished": "2017-09-27T11:18:51.000Z",
+    "dateModified": "2017-09-27T15:30:08.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://images.unsplash.com/photo-1491379225938-4e00902b93bb?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=253c59d989b9ed1ce0d2ae9ada1e61ba",
+        "width": 1080,
+        "height": 810
+    },
+    "keywords": "Getting Started",
+    "description": "Creating a totally custom design for your publication\n\nGhost comes with a beautiful default theme called Casper, which is designed to\nbe a clean, readable publication layout and can be easily adapted for most\npurposes. However, Ghost can also be completely themed to suit your needs.\nRather than just giving you a few basic settings which act as a poor proxy for\ncode, we just let you write code.\n\nThere are a huge range of both free and premium pre-built themes which you can\nget from the Ghost Them",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://wowthemesnet.github.io/ghost-demo-nectaria/"
+    }
+}
+    </script>
+
+    <script src="../public/ghost-sdk.js"></script>
+<script>
+ghost.init({
+	clientId: "ghost-frontend",
+	clientSecret: "48a3580b6ab7"
+});
+</script>
+    <meta name="generator" content="Ghost 2.22">
+    <link rel="alternate" type="application/rss+xml" title="Ghost Theme" href="https://wowthemesnet.github.io/ghost-demo-nectaria/rss/">
+</head>
+<body class="post-template tag-getting-started">
+  
+    <div class="site-wrapper">
+
+        
+
+
+<nav class="main-nav overlay clearfix">
+        <a class="blog-logo" href="../"><img src="../content/images/2019/05/logo.png" alt="Ghost Theme"></a> 
+        <ul id="menu">
+        <li class="nav-home" role="presentation"><a href="../">Home</a></li>
+        <li class="nav-category" role="presentation"><a href="../tag/life/">Category</a></li>
+        <li class="nav-post" role="presentation"><a href="../themes-2/">Post</a></li>
+        <li class="nav-author" role="presentation"><a href="../author/ghost/">Author</a></li>
+        <li class="nav-page" role="presentation"><a href="../about/">Page</a></li>
+    <span class="socialheader">    
+    
+            <a class="social-link social-link-fb" href="https://www.facebook.com/wowthemesnet" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+            <a class="social-link social-link-tw" href="https://twitter.com/wowthemesnet" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
+        
+            <a class="subscribe-button" href="../subscribe/">Subscribe</a>
+    
+     </span>
+        
+        
+        
+   
+
+</ul>
+
+</nav>
+<header class="main-header post-head " style="background-image: url(https://images.unsplash.com/photo-1491379225938-4e00902b93bb?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=253c59d989b9ed1ce0d2ae9ada1e61ba)">
+	<div class="vertical">
+        <div class="main-header-content inner">
+             <h1 class="post-title">Setting up your own Ghost theme</h1>
+             <div class="entry-title-divider"><span></span><span></span><span></span></div>
+            <section class="post-meta">
+                <time class="post-date" datetime="2017-09-27">27 September 2017</time>  on <a href="../tag/getting-started/">Getting Started</a> |  <a class="scrolltocomments" href="#disqus_thread">Comments</a>
+            </section>
+        </div>
+    </div>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-getting-started">
+
+        <section class="post-content">
+            <!--kg-card-begin: markdown--><!--kg-card-begin: markdown--><p>Creating a totally custom design for your publication</p>
+<p>Ghost comes with a beautiful default theme called Casper, which is designed to be a clean, readable publication layout and can be easily adapted for most purposes. However, Ghost can also be completely themed to suit your needs. Rather than just giving you a few basic settings which act as a poor proxy for code, we just let you write code.</p>
+<p>There are a huge range of both free and premium pre-built themes which you can get from the <a href="http://marketplace.ghost.org">Ghost Theme Marketplace</a>, or you can simply create your own from scratch.</p>
+<p><a href="http://marketplace.ghost.org"><img src="https://casper.ghost.org/v1.0.0/images/marketplace.jpg" alt="marketplace"></a></p>
+<blockquote>
+<p>Anyone can write a completely custom Ghost theme, with just some solid knowledge of HTML and CSS</p>
+</blockquote>
+<p>Ghost themes are written with a templating language called handlebars, which has a bunch of dynamic helpers to insert your data into template files. Like <code>{{author.name}}</code>, for example, outputs the name of the current author.</p>
+<p>The best way to learn how to write your own Ghost theme is to have a look at <a href="https://github.com/TryGhost/Casper">the source code for Casper</a>, which is heavily commented and should give you a sense of how everything fits together.</p>
+<ul>
+<li><code>default.hbs</code> is the main template file, all contexts will load inside this file unless specifically told to use a different template.</li>
+<li><code>post.hbs</code> is the file used in the context of viewing a post.</li>
+<li><code>index.hbs</code> is the file used in the context of viewing the home page.</li>
+<li>and so on</li>
+</ul>
+<p>We've got <a href="http://themes.ghost.org/docs/about">full and extensive theme documentation</a> which outlines every template file, context and helper that you can use.</p>
+<p>If you want to chat with other people making Ghost themes to get any advice or help, there's also a <strong>#themes</strong> channel in our <a href="https://slack.ghost.org">public Slack community</a> which we always recommend joining!</p>
+<!--kg-card-end: markdown--><!--kg-card-end: markdown-->
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/john/" style="background-image: url(//www.gravatar.com/avatar/b1cc14991db7a456fcd761680bbc8f81?d=404&s=250)"><span class="hidden">John's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/john/">John</a></h4>
+
+                    <p>John is a fictional author on this Ghost blog, invented for testing purposes only. However, we should type in here a few lines to demonstrate how a real description looks.</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">USA</span>
+                    <span class="author-link icon-link"><a href="https://www.wowthemes.net">https://www.wowthemes.net</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Setting%20up%20your%20own%20Ghost%20theme&url=https://wowthemesnet.github.io/ghost-demo-nectaria/themes-2-2/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://wowthemesnet.github.io/ghost-demo-nectaria/themes-2-2/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https://wowthemesnet.github.io/ghost-demo-nectaria/themes-2-2/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
+
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+			var disqus_shortname = 'demowebsite'; // required: replace demowebsite with your own shortname
+			var disqus_identifier = '';
+
+			/* * * DON'T EDIT BELOW THIS LINE * * */
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+		</script>
+    </article>
+</main>
+
+<div class="clearfix"></div>
+
+<aside class="read-next">
+    <a class="read-next-story " style="background-image: url(https://images.unsplash.com/photo-1497393007523-302c86e07c5d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=3595e70bd17340435348dfb2fc307f9b)" href="../advanced-markdown-2-2/">
+        <section class="post">
+            <h2>Advanced Markdown tips</h2>
+            <p>There are lots of powerful things you can do with the Ghost editor If you've gotten pretty comfortable with&hellip;</p>
+        </section>
+    </a>
+    <a class="read-next-story prev " style="background-image: url(https://images.unsplash.com/photo-1495708188978-c9327285bed7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=1f2a4c686f8c992ed6cd8bd55d596a6d)" href="../looking-glass-house/">
+        <section class="post">
+            <h2>Looking-Glass House</h2>
+            <p>One thing was certain, that the white kitten had had nothing to do with it:— it was the black&hellip;</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+
+          <a href="#top" id="back-to-top" class="back-top"></a>
+
+            <div class="text-center"><a href="../">Ghost Theme</a> &copy; 2019<br>
+            A Ghost Theme by <a target="_blank" href="https://www.wowthemes.net/themes/nectaria/">WowThemes.net</a>
+          </div>
+        </footer>
+
+    </div>
+
+    
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../assets/js/masonry.min.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="../assets/js/index.js"></script>
+
+</body>
+</html>
